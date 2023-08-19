@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl text-center p-6">Lets get some money <span class="text-blue-400">To</span></h1>
+     </header>
+     <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 mx-auto w-9/12">
+                <div class=" bg-green-500 text-center p-10 ">
+                    <h4 class="text-4xl p-2">Deposit</h4>
+                    <h2  class="text-3xl ">$ <span id="deposit-total">000</span></h2>
+                </div>
+                <div class=" bg-orange-500 text-center p-10 ">
+                    <h4  class="text-4xl p-2">Withdraw</h4>
+                    <h2 id="totalwithdraw" class="text-3xl">$ <span id="withdraw-total">000</span></h2>
+                </div>
+                <div class=" bg-blue-500 text-center p-10 ">
+                    <h4 class="text-4xl p-2">Balance Total</h4>
+                    <h2 class="text-3xl">$<span id="balancetotal">10000</span></h2>
+                </div>
+                
+                
+              </div>
+        </section>
+            
+        <section class="m-12">
+            <div class="grid grid-cols-2 gap-4 mx-auto w-9/12 ">
+                <div class=" bg-yellow-400 p-10 ">
+                    <h4 class="text-4xl p-2">Please Deposit</h4>
+                    <input id="deposit-field" class="w-9/12 p-1 mb-2" text-sm type="email" name="" id="" placeholder="$ amount you want to Deposit">
+                   <button id="btn-deposit" class="bg-gray-400 p-1 block">Deposit</button>
+                </div>
+
+                <div class=" bg-lime-500 p-10 ">
+                    <h4 class="text-4xl p-2">Please Withdraw</h4>
+                    <input id="withdraw-field" class="w-9/12 p-1 mb-2" text-sm type="email" name="" id="" placeholder="$ amount you want to Withdraw">
+                   <button id="btn-withdraw" class="bg-gray-400 p-1 block">Withdraw</button>
+                </div>
+                
+                
+                
+              </div>
+
+        </section>
+
+        
+    </main>
+
+    <script src="/bank.js"></script>
+    <script src="/depo.js"></script>
+    <script src="/withdraw.js"></script>
+</body>
+</html>
